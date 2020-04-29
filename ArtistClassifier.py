@@ -105,7 +105,7 @@ if __name__== "__main__":
         curTrainAcc = artistClassifier.train_naive_bayes_classifier()[1]
         totalTestAcc += curTestAcc
         totalTrainAcc += curTrainAcc
-        print("Run {} Train Acc: {:.2f}, Test Acc: {:.2f}", format(i+1, curTestAcc, curTrainAcc))
+        print("Run {} Train Acc: {:.2f}, Test Acc: {:.2f}".format(i+1, curTestAcc, curTrainAcc))
     end = timer()
     print("In {} runs: Train Acc: {:.2f}, Test Acc: {:.2f}. Time Elapsed: {} seconds".format(totalTrials, totalTestAcc/totalTrials, totalTrainAcc/totalTrials, end-start))
 
